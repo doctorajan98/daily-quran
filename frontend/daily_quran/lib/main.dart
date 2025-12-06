@@ -5,13 +5,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:daily_quran/app/router/AppRouter.dart';
 
 // BloC imports
-
+import 'package:daily_quran/features/tasbih/presentation/bloc/tasbih_bloc.dart';
 
 void main() {
   runApp(
     MultiBlocProvider(
       providers: [
-        // BlocProvider(create: (context) => AppBloc()),
+        BlocProvider(create: (context) => TasbihBloc()),
       ],
       child: const DailyQuranApp(),
     ),
