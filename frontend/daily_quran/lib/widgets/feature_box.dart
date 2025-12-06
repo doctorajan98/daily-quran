@@ -37,6 +37,7 @@ class FeatureBox extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(icon, size: 36),
+              SizedBox(height: 6),
               Text(title, style: TextStyle(fontSize: 16)),
             ],
           ),

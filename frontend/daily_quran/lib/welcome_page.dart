@@ -44,7 +44,7 @@ class _WelcomePageState extends State<WelcomePage> {
               child: PageView(
                 controller: _controller, 
                 children: [
-                  FeatureBox(icon: Icons.countertops, title: "Tasbih", onTap: () {
+                  FeatureBox(icon: Icons.add_circle, title: "Tasbih", onTap: () {
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Tasbih Counter"), duration: Duration(seconds: 1)));
                   }),
 
