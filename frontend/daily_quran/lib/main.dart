@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+// import 'package:flutter/rendering.dart';
 
 // Constants import
 import 'package:daily_quran/core/constants/app_constant.dart';
@@ -11,6 +12,7 @@ import 'package:daily_quran/app/router/app_router.dart';
 import 'package:daily_quran/features/tasbih/presentation/bloc/tasbih_bloc.dart';
 
 void main() {
+  // debugPaintSizeEnabled = true;
   runApp(
     MultiBlocProvider(
       providers: [

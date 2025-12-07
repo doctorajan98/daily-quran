@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+// Widgets imports
 import 'package:daily_quran/widgets/feature_box.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -45,26 +48,20 @@ class _WelcomePageState extends State<WelcomePage> {
                 controller: _controller, 
                 children: [
                   FeatureBox(icon: Icons.add_circle, title: "Tasbih", onTap: () {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Tasbih Counter"), duration: Duration(seconds: 1)));
+                    context.go('/tasbihPage');
                   }),
 
                   FeatureBox(icon: Icons.menu_book, title: "Quran", onTap: () {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Quran"), duration: Duration(seconds: 1)));
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Quran Coming Soon"), duration: Duration(seconds: 1)));
                   }),
 
                   FeatureBox(icon: Icons.star, title: "Asmaul Husna", onTap: () {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Asmaul Husna"), duration: Duration(seconds: 1)));
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Asmaul Husna Coming Soon"), duration: Duration(seconds: 1)));
                   }),
                 ],
               ),
             ),
           )
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
         ],
       ),
     );
